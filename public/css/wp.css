@@ -1,0 +1,430 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: hsl(0, 0%, 10%);
+  line-height: 1.5;
+  font-family: "PT Sans", sans-serif;
+  overflow-x: hidden;
+  }
+
+.logofont {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.fixed-bottom-right {
+  position: fixed;
+  bottom: 1px;
+  right: 1px;
+  z-index: 9999; /* Ensures it stays above other elements */
+  color: white;
+  padding: 15px;
+  border-radius: 50%; /* Makes it round like a button */
+  text-align: center;
+}
+.fixed-bottom-right img {
+  width: 90px; 
+  height: auto; 
+}
+
+/* Optional hover effect */
+.fixed-bottom-right:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 10px 20px; 
+  background-color: #f8f9fa; 
+  font-weight: bold;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-item {
+  margin-right: 15px; /* Adjust spacing between nav items */
+}
+
+.player-info {
+  margin-left: 15px; /* Spacing between "Player" and "Logout" */
+}
+
+.navbar img {
+  width: 39;
+  height: 39;
+}
+.logout-button {
+  padding: 8px 15px; 
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.logout-button:hover {
+  background-color: black;
+  color: white;
+}
+.welcomestrip-container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background-size:contain;
+  margin: 0;
+  min-height: 110vh;
+}
+.welcomehead {
+  color: black;
+  font-family: "Silkscreen", sans-serif;
+  font-size: 2cm;
+  text-align: center;
+}
+.pokicentre {
+  color: #e7c505;
+  font-size: 2cm;
+  font-family: "Silkscreen", sans-serif;
+  text-align: center;
+  text-shadow: -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, 1.5px 1.5px 0 black,
+  1.5px 1.5px 0 black;
+}
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.list-group-item {
+  background-color: transparent; /* Makes the background transparent */
+  border: none;
+  text-decoration: none; 
+}
+.snorlax {
+  position: relative;
+  z-index: 3; /* Ensures image is above the box */
+  margin-left: -7cm; 
+  margin-top: 0cm;
+  width: 18cm;
+}
+.espeon {
+  position: relative;
+  z-index: 3; /* Ensures image is above the box */
+  margin-left: -7cm; 
+  margin-top: -2cm;
+  width: 12cm;
+}
+
+.enrolments-box {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.subheading {
+  font-weight: bold;
+  font-size: 20px;
+}
+a {
+  text-decoration: none; /* Removes underline from all links */
+}
+
+a:hover {
+  text-decoration: underline; /* Optionally add underline on hover if you want */
+}
+.list_bg {
+  position: relative;
+  background-size: cover; /* Ensures the image covers the entire area */
+  width: 100%;
+  min-height: 100vh;
+}
+.fade-card {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.fade-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px; /* Adjust width for fade length */
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  pointer-events: none;
+}
+.wigglytuff {
+  position: relative;
+  z-index: 3; /* Ensures image is above the box */
+  margin-left: -4cm; 
+  margin-top: -2cm;
+  width: 9cm;
+}
+.sylveon {
+  position: relative;
+  z-index: 3; /* Ensures image is above the box */
+  margin-right: -4cm; 
+  margin-top: -2cm;
+  width: 9cm;
+}
+.clefairy {
+  position: relative;
+  z-index: 3; /* Ensures image is above the box */
+  margin-left: -4cm; 
+  margin-top: -1cm;
+  width: 9cm;
+}
+.typeshow-btn {
+  background-color: transparent;
+  border-color: #83688b;
+  color: #83688b;
+  border-radius: 5px;
+  border-width: 3px;
+  font-weight: bold;
+  font-size: large;
+  transition: background-color 0.3s ease;
+}
+
+.typeshow-btn:hover {
+  background-color: #83688b;
+  border-color: #83688b;
+  color:white;
+  text-decoration: none;
+}
+.gameshow-card-body {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 30px; 
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'PT Sans', sans-serif; 
+  color: #333; 
+}
+
+
+
+.gameshow-card-body h1 {
+  color: #222; 
+  font-weight: bold;
+}
+
+.gameshow-card-body .btn-primary {
+  background-color: #ffcc00; 
+  border-color: #ffaa00;
+}
+
+.gameshow-card-body .btn-primary:hover {
+  background-color: #ffaa00; 
+}
+
+.gameshow-card-body .btn-danger {
+  background-color: #ff3333; 
+  border-color: #ff0000;
+}
+
+.gameshow-card-body .btn-danger:hover {
+  background-color: #ff0000; 
+}
+.gameshow-box {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.pagination .prev-button, .pagination .next-button {
+  font-weight: bold;
+  padding: 8px 14px;
+  font-size: 16px;
+}
+.table.table-transparent tbody tr {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  color: black !important; 
+}
+
+.table.table-transparent thead tr {
+  background-color: #fff !important;
+  font-weight: bold !important;
+  color: black !important;
+}
+
+.table.table-transparent td {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.bottom-section {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.reviews-box {
+  width: 100%; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.horizontal-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #000; 
+  margin-left: 10px;
+}
+
+.review-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review-title {
+  margin: 0;
+  font-size: 0.5cm; 
+  font-weight:bold;
+}
+
+.profile-header {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black; 
+  padding: 20px; 
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.pokemon-card {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pokemon-card img {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.pokemon-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.speech-bubble {
+  position: relative;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0.4em;
+  padding: 20px;
+  max-width: 300px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #fff; 
+  border-bottom: 0;
+  margin-left: -10px;
+  border-right-color: #ccc; 
+  z-index: -1;
+}
+
+.speech-bubble:before {
+  content: '';
+  position: absolute;
+  bottom: -22px; 
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-top-color: #ccc; 
+  border-bottom: 0;
+  margin-left: -12px;
+}
+
+.nav-link, .navbar-nav .nav-item a {
+  text-decoration: none;
+}
+.nav-link:hover, .navbar-nav .nav-item a:hover {
+  text-decoration: none;
+}
+
+.nav-link:active, .navbar-nav .nav-item a:active {
+  text-decoration: none;
+}
+.teamsedit-btn {
+  background-color: transparent;
+  border-color: #777d83;
+  color: #777d83;
+  border-radius: 5px;
+  border-width: 3px;
+  font-weight: bold;
+  font-size: large;
+  transition: background-color 0.3s ease;
+}
+.teamsedit-btn:hover {
+  background-color: #777d83;
+  border-color: #777d83;
+  color:white;
+  text-decoration: none;
+}
+.upload-btn {
+  background-color: #aea2bd;
+  border-color: #aea2bd;
+  color: white;
+  border-radius: 5px;
+  border-width: 3px;
+  font-weight: bold;
+  font-size: large;
+  transition: background-color 0.3s ease;
+}
+.upload-btn:hover {
+  background-color: #7e7589;
+  border-color: #7e7589;
+  color:white;
+  text-decoration: none;
+}
